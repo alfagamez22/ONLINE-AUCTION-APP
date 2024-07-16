@@ -30,7 +30,7 @@ class Item:
 
     def get_winner(self):
         if self.bids:
-            return max(self.bids, key=lambda x: x[1])[0]  # Return buyer with highest bid
+            return max(self.bids, key=lambda x: x[1])[0]  
         return None
 
     def format_datetime(self, dt):

@@ -5,12 +5,12 @@ from members import Buyer, Seller
 
 class AuctionSystem:
     def __init__(self):
-        self.members = {}  # Key: member_id (string), Value: Member object
+        self.members = {}  
         self.items = {}
         self.feedbacks = []
         self.marketplace = Marketplace()
-        self.next_member_id = 1  # To generate unique member IDs
-        self.next_item_id = 1  # To generate unique item IDs
+        self.next_member_id = 1  
+        self.next_item_id = 1  
 
     def register_member(self):
         member_type = input("Enter member type (buyer/seller): ").lower()
@@ -20,7 +20,7 @@ class AuctionSystem:
         home_address = input("Enter home address: ")
         phone = input("Enter phone number: ")
 
-        member_id = f"M{self.next_member_id:03d}"  # Generate member ID like M001, M002, etc.
+        member_id = f"M{self.next_member_id:03d}"  
         self.next_member_id += 1
 
         if member_type == 'buyer':
@@ -59,7 +59,7 @@ class AuctionSystem:
         start_bid = float(input("Enter starting bid price: "))
         bid_increment = float(input("Enter bid increment: "))
 
-        item_id = f"I{self.next_item_id:03d}"  # Generate item ID like I001, I002, etc.
+        item_id = f"I{self.next_item_id:03d}"  
         self.next_item_id += 1
 
         item = Item(item_id, title, description, start_bid, bid_increment, self.members[seller_id])
@@ -145,7 +145,7 @@ class AuctionSystem:
                     print(" " * 15, end="")
                 print(f"{bidder.name:<30}{bidder.member_id:<15}")
             
-            print()  # Empty line for readability between items
+            print()  
 
     def buy_item(self):
         self.marketplace.list_items()
@@ -163,7 +163,7 @@ class AuctionSystem:
         price = float(input("Enter price: "))
         quantity = int(input("Enter quantity: "))
         
-        item_id = f"M{self.next_item_id:03d}"  # Generate marketplace item ID like M001, M002, etc.
+        item_id = f"M{self.next_item_id:03d}"  
         self.next_item_id += 1
 
         self.marketplace.add_item(item_id, item_name, price, quantity, self.members[seller_id])

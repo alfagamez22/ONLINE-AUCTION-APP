@@ -1,3 +1,21 @@
+"""
+MP5 and Final Exam
+
+Group Member(s):    Dhanniel Harvey B. Buan
+                    Darvin Estrella
+                    Mikko Fabellar
+                
+PYTHON ONLINE AUCTION APP
+
+Code Requisites: 
+        Inheritance
+        Constructor for each classes
+        Methods for each classes
+        Encapuslation
+        Overriding
+
+"""
+
 from auction_system import AuctionSystem
 
 def main():
