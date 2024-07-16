@@ -1,30 +1,45 @@
-# Online Auction and Marketplace System
+# Online Auction App
 
-This project implements an online auction and marketplace system using Python. It allows users to register as buyers or sellers, add items for auction, place bids, buy and sell items in a marketplace, and leave feedback.
+## Files in this project
 
-## Files
+1. `main_app.py` - The main program that runs the application
+2. `auction_system.py` - Contains the core functionality of the auction system
+3. `items.py` - Defines the Item class used in auctions
+4. `marketplace.py` - Implements the Marketplace class for buying and selling items
+5. `members.py` - Defines Member, Buyer, and Seller classes
 
-1. `items.py`: Defines the `Item` class for auction items.
-2. `marketplace.py`: Implements the `Marketplace` class for buying and selling items.
-3. `members.py`: Contains the abstract `Member` class and concrete `Buyer` and `Seller` classes.
-4. `online_auction_app.py`: The main application file with the user interface.
-5. `auction_system.py`: Implements the core `AuctionSystem` class that manages the entire system.
+## How to run the program
+
+1. Ensure you have Python installed on your system (Python 3.6 or higher recommended).
+2. Make sure all the above files are in the same directory.
+3. Open a terminal or command prompt.
+4. Navigate to the directory containing the files.
+5. Run the following command:
+6. Follow the on-screen prompts to interact with the application.
 
 ## Features
 
-- User registration (buyers and sellers)
-- Adding items for auction
-- Bidding on auction items
-- Viewing current bidding activities
-- Buying and selling items in a marketplace
-- Leaving and viewing feedback
-- Displaying auction winners
+- Register as a buyer or seller
+- Add items for auction
+- Place bids on auction items
+- View current bidding activities
+- Buy and sell items in the marketplace
+- Leave feedback for other users
+- View auction winners
 
+## Notes
 
-## System Structure
+- The program uses a command-line interface.
+- Follow the numbered menu options to navigate through different features.
+- Enter the required information as prompted by the program.
 
-- The `AuctionSystem` class in `auction_system.py` is the central component that manages members, items, and the marketplace.
-- `Item` class in `items.py` represents auction items and handles bidding logic.
-- `Marketplace` class in `marketplace.py` manages buying and selling of non-auction items.
-- `Member`, `Buyer`, and `Seller` classes in `members.py` represent users of the system.
-- The main loop in `online_auction_app.py` provides a text-based user interface for interacting with the system.
+## Running the Executable (.exe) Version
+
+If you have the .exe version of the Online Auction App:
+
+1. Navigate to the 'dist' folder in the project directory:
+2. Double-click on 'main_app.exe' to run the program.
+3. If you encounter any security warnings, you may need to click "More info" and then "Run anyway" to start the application.
+4. The program will open in a command prompt window. Follow the on-screen instructions to use the Online Auction App.
+
+**Note:** The .exe file contains all necessary components to run the program, so you don't need Python installed to use this version.
